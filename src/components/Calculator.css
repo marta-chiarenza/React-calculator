@@ -1,0 +1,68 @@
+
+
+.calculator {
+  max-width: 450px;
+  padding: 16px 20px;
+  border: 1px solid #e6e8eb;
+  border-radius: 12px;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid #eceef1;
+  border-radius: 10px;
+}
+
+
+.row-disabled .input,
+.row-disabled .select {
+  opacity: 0.6;
+}
+.select, .input {
+  height: 36px;
+  border: 1px solid #cfd6dd;
+  background: #fff;
+  border-radius: 8px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.select {
+  width: 56px;
+  text-align: center;
+}
+
+.input {
+  flex: 1;
+  min-width: 120px;
+}
+
+.row-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.select:focus-visible,
+.input:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}

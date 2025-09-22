@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Row from "./Row"
-
+import "./Calculator.css";
 
 export default function Calculator() {
     const [rows, setRows] = useState([{
