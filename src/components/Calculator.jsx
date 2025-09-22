@@ -12,7 +12,7 @@ export default function Calculator() {
 
     }
     function handleChange(id, field, value) {
-        //cambia segno e campo testo 
+        //gestisce sia il segno che le cifre
 
         setRows(rows => rows.map((row) => row.id === id ? { ...row, [field]: value } : row))
 
@@ -25,12 +25,12 @@ export default function Calculator() {
 
     }
 
-    const handleToggle = (id) => {
+    const handleToggle = (id) => { //abilitazione e disabilitazione riga 
         setRows(rows => rows.map((row) => row.id === id ? { ...row, enabled: !row.enabled } : row))
 
     }
 
-    const result = rows.reduce((acc, row) => {
+    const result = rows.reduce((acc, row) => { //calcolo risultato
         if (!row.enabled) return acc;
         return row.sign === "+" ? acc + Number(row.value) : acc - Number(row.value);
     }, 0)
