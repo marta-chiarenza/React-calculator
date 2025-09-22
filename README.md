@@ -1,5 +1,5 @@
 # React + Vite
 
 Per lanciare il programma:
- npm i 
- npm run dev 
+### npm i ;
+### npm run dev 
